@@ -1,0 +1,14 @@
+# Mini Jarvis Streamlit PWA - Updated Requirements
+streamlit>=1.28.0
+requests>=2.31.0
+wikipedia>=1.4.0
+pyjokes>=0.6.0
+
+# Optional: Only include torch if you actually need HuggingFace transformers
+# For basic voice assistant functionality, these are NOT required
+# transformers>=4.35.0
+# torch>=2.5.0
+
+# Alternative lightweight NLP options (uncomment if needed):
+# nltk>=3.8.1
+# spacy>=3.7.0
