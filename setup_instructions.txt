@@ -1,0 +1,104 @@
+
+# Mini Jarvis AI Personal Assistant - Setup Instructions
+
+## Prerequisites
+- Python 3.7 or higher
+- Microphone and speakers/headphones
+- Internet connection (for API services)
+
+## Installation Steps
+
+1. Install required packages:
+   pip install -r requirements.txt
+
+   OR install individually:
+   pip install SpeechRecognition pyttsx3 wikipedia pyjokes requests transformers torch
+
+2. For Windows users, if you encounter audio issues:
+   pip install pypiwin32
+
+3. For microphone access, install PyAudio:
+   - Windows: pip install pyaudio
+   - Mac: brew install portaudio && pip install pyaudio
+   - Linux: sudo apt-get install python3-pyaudio
+
+## API Setup (Optional but Recommended)
+
+### OpenWeatherMap API:
+1. Visit https://openweathermap.org/api
+2. Sign up for a free account
+3. Get your API key
+4. Replace "YOUR_OPENWEATHER_API_KEY" in the code with your actual key
+
+## Running the Assistant
+
+1. Navigate to the project directory
+2. Run: python mini_jarvis.py
+3. Speak clearly into your microphone
+4. Say "exit" or "quit" to stop the assistant
+
+## Voice Commands You Can Use
+
+### Basic Interactions:
+- "Hello", "Hi", "Hey"
+- "What time is it?"
+- "What's the date?"
+- "Tell me a joke"
+
+### Weather:
+- "What's the weather in [city name]?"
+- "Weather in London"
+
+### Wikipedia Search:
+- "Tell me about [topic]"
+- "Search for [topic]"
+- "What is [topic]?"
+- "Who is [person]?"
+
+### Reminders:
+- "Remind me to [task]"
+- "Add reminder [task]"
+- "Show my reminders"
+
+### Exit:
+- "Exit", "Quit", "Bye", "Goodbye", "Stop"
+
+## Troubleshooting
+
+### Microphone Issues:
+- Check microphone permissions
+- Test microphone with other applications
+- Adjust microphone sensitivity in system settings
+
+### Speech Recognition Issues:
+- Speak clearly and at moderate pace
+- Ensure quiet environment
+- Check internet connection (uses Google Speech Recognition)
+
+### Voice Output Issues:
+- Check speaker/headphone connection
+- Verify system audio settings
+- For Linux users, install espeak: sudo apt-get install espeak
+
+## Customization Options
+
+### Voice Settings:
+- Change voice gender: voices[0].id (male) or voices[1].id (female)
+- Adjust speech rate: engine.setProperty('rate', 150)
+
+### Adding New Commands:
+1. Add new conditions in the process_command() method
+2. Create corresponding handler methods
+3. Test thoroughly
+
+## Advanced Features (Optional)
+
+### HuggingFace Integration:
+The code includes optional HuggingFace transformers integration for advanced NLP.
+This requires additional setup and may need GPU for optimal performance.
+
+### File Structure:
+mini_jarvis.py          # Main application
+requirements.txt        # Dependencies
+reminders.json         # Stored reminders (auto-generated)
+setup_instructions.txt # This file
