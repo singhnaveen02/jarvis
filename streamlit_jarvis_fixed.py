@@ -80,7 +80,7 @@ if 'reminders' not in st.session_state:
 
 class WebJarvis:
     def __init__(self):
-        self.weather_api_key = "YOUR_OPENWEATHER_API_KEY"  # Replace with actual key
+        self.weather_api_key = "a51eaca1954a256f122d4f1c8d4290b2"  # Replace with actual key
         self.weather_base_url = "http://api.openweathermap.org/data/2.5/weather?"
 
         # Removed HuggingFace transformers dependency for lighter deployment
