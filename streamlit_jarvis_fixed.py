@@ -6,7 +6,7 @@ import pyjokes
 
 # -------------------- PAGE CONFIG --------------------
 st.set_page_config(
-    page_title="Mini Jarvis - AI Voice Assistant",
+    page_title="Mini Jarvis - AI Assistant",
     page_icon="🤖",
     layout="centered",
     initial_sidebar_state="collapsed"
