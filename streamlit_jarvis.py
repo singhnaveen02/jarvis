@@ -182,17 +182,7 @@ class WebJarvis:
 jarvis = WebJarvis()
 
 # -------------------- MAIN UI --------------------
-st.markdown('<h1 class="main-header">🤖 Mini Jarvis - AI Voice Assistant</h1>', unsafe_allow_html=True)
-st.success("✅ Deployment-Optimized Version - Faster Loading!")
-
-# Voice simulation
-st.markdown("""
-<div class="voice-controls">
-    <p><strong>💬 Ready for commands!</strong></p>
-    <p>💡 Use st.audio_input (in sidebar) for voice recording</p>
-</div>
-""", unsafe_allow_html=True)
-
+st.markdown('<h1 class="main-header">🤖 Mini Jarvis</h1>', unsafe_allow_html=True)
 # User input
 user_input = st.text_input("💬 Type your message or command:", placeholder="Try: 'Hello', 'Weather in London'")
 
