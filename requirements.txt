@@ -1,7 +1,7 @@
 # Mini Jarvis Streamlit PWA - Updated Requirements
 streamlit>=1.28.0
 requests>=2.31.0
-wikipedia-api>=0.6.0
+wikipedia>=1.4.0
 pyjokes>=0.6.0
 yfinance>=0.2.28
 googletrans==4.0.0rc1
